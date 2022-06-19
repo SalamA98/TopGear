@@ -23,6 +23,7 @@
                     <h4>COLOR:</h4> {{ $car->colors}}<br>
                      {{-- reduce(function ($carry, $color) {return $carry . $color->name . ', ';}) }} <br> --}}
                     <h4>COUNTRY:</h4>{{ $car->country }} <br>
+                    <h4>NEW:</h4>{{ $car->is_new }} <br>
                     <p class="content">
                         <h4>MORE DETIALS:</h4> {!! $car->description !!} <br>
                     </p>

@@ -17,7 +17,7 @@
             src="{{ $car->featured_image }}"
             alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">{{ $car->brand }} {{ $car->model }}</h5>
+            <h5 class="card-title">{{ $car->brand }} {{ $car->model }} </h5>
             <a href="{{ route('admin.cars.show', $car) }}" class="text-primary stretched-link"> show more
                 info
             </a>
