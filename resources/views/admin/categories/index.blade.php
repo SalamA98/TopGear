@@ -25,13 +25,10 @@
                             <div class="card-body">
                                 <h3 class="card-title">{{ $category->name }} ({{ $category->cars->count() }})</h3>
                                 <p class="card-text">Capacity: {{ $category->capacity }}</p>
-                                <a href="..." class="text-primary stretched-link"> show Cars in Category</a>
+                                <a href="{{ route('admin.categories.show',$category) }}" class="text-primary stretched-link"> show Cars in Category</a>
                                 <div class="row my-2">
                                     <div class="col">
-                                        <form action="{{ route('admin.categories.edit', $category) }}" method="PUT"> @csrf
-                                            <button class="btn ma-2" type="submit"
-                                                style="background-color: #161C34; color:white;">Edit</button>
-                                        </form>
+                                        <a class="btn ma-2" href="{{ route('admin.categories.edit',$category) }}" style="background-color: #161C34; color:white;">Edit</a>
                                     </div>
                                     <div class="col">
                                         <button type="button" class="btn" data-toggle="modal"
