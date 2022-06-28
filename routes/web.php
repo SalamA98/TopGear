@@ -29,6 +29,7 @@ Route::view('/contact', 'pages.contact')->name('contact');
 Route::POST('/contact', [MessageController::class, 'store'])->name('message.store');
 
 Route::resource('cars', PublicCarController::class);
+// Route::get('categories', [PublicCategoryController::class, 'index'])->name('categories.index');
 
 Route::group(['as'=>'admin.','prefix'=>'admin'] , function(){
 
